@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+            background-image: url("image/water.jpg");
+            color: white;
+            background-attachment: fixed;
+        }
+        h1{
+            text-align: center;
+            font-family: "Old English Text MT",sans-serif;
+            font-size: 35px;
+            text-shadow: 0 0 5px red;
+        }
+        fieldset{
+            border: 2px solid white;
+            background-color: rgba(0,0,0,0.5);
+            padding: 15px;
+            margin: 15px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            box-shadow: 0 0 10px black;
+        }
+        legend{
+            background-image: url("image/water.jpg");
+            padding: 14px 25px;
+            border: 2px solid white;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            font-family: "Old English Text MT",sans-serif;
+            font-size: 20px;
+        }
+        table{
+            width: 100%;
+            font-size: 18px;
+        }
+        td{
+            padding: 5px;
+        }
+        input[type='text'],
+        input[type='date'],
+        input[type='month'],
+        input[type='time'],
+        input[type='number']{
+            height: 35px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+        textarea{
+            border: none;
+            outline: none;
+            width: 210px;
+            border-radius: 10px;
+        }
+        input[type='text']:focus,
+        input[type='date']:focus,
+        input[type='month']:focus,
+        input[type='time']:focus,
+        input[type='number']:focus,
+        textarea:focus{
+            background-color: #a28f6f;
+            box-shadow: 0 0 10px darkred;
+        }
+        select{
+            height: 35px;
+            font-size: 20px;
+            width: 200px;
+            border-radius: 5px;
+        }
+        .button{
+            background-image: url("img/background2.jpg");
+            color: white;
+            outline: none;
+            font-size: 18px;
+            padding: 14px 55px;
+            border: 2px solid white;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .button:hover{
+            box-shadow: 0 0 10px white;
+        }
+        input[type='submit'],
+        input[type='reset']{
+            box-shadow: 0 0 15px red;
+            text-align: center;
+        }
+        button{
+            background-color: orangered;
+            color:black;
+            width: 250px;
+            padding:  20px;
+            font-size: 30px;
+            margin-top: 20px;
+            border-bottom: #00aeef;
+        }
+    </style>
+</head>
+<body>
+<h2>Patient Registration</h2>
+
+<fieldset>
+        <legend>Registration id</legend>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <lable>Name</lable>
+                    </td>
+                    <td>
+                        <input type="text"autofocus>
+                    </td>
+                    <td>
+                        <lable>Patient Id</lable>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <lable>date</lable>
+                    </td>
+                    <td>
+                        <input type="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Father's Name</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <lable>Mother's Name</lable>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Present Address</label>
+                    </td>
+                    <td colspan="3">
+                        <textarea cols="20" rows="5"></textarea>
+                    </td>
+                    <td>
+                        <label>Permanent Address</label>
+                    </td>
+                    <td>
+                        <textarea cols="20" rows="5"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <lable>Phone Number</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Landline number</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <label>Mobile Number</label>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                <tr>
+                    <td>
+                        <label>Date of Birth</label>
+                    </td>
+                    <td>
+                        <input type="datetime-local">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label>Select a Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="easy" value="Male">Male
+                    </td>
+                    <td>
+                        <input type="radio" name="easy" value="Female">Female
+                    </td>
+                    <td>
+                        <input type="radio" name="easy" value="others">Others
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Disease</lable>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                    <td>
+                        <lable> Status of diesease</lable>
+                    </td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+                <br>
+            </table>
+        </form>
+    </fieldset>
+<fieldset>
+    <legend>Room Information</legend>
+    <form>
+        <table>
+            <tr>
+                <td>Building Name</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Room No</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+            <td>Price</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        </table>
+    </form>
+</fieldset>
+<fieldset>
+    <legend>Room Type</legend>
+    <table>
+        <tr>
+            <td>
+                <input type="radio" name="easy" value="normal">NORMAL
+            </td>
+            <td>
+                <input type="radio" name="easy" value="Medium">MEDIUM
+            </td>
+            <td>
+                <input type="radio" name="easy" value="vip">VIP
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<table>
+    <tr>
+        <td>
+            <button type="button" class="btn btn-primary btn-lg">SUBMIT</button>
+            <button type="button" class="btn btn-primary btn-lg">RESET</button>
+        </td>
+    </tr>
+</table>
+<br><br><br>
+</body>
+</html>
