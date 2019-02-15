@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+            background-color: orange;
+            color: black;
+            background-attachment: fixed;
+
+        }
+        table{
+            width: 100%;
+            font-size: 18px;
+        }
+        td{
+            padding: 10px;
+        }
+        input[type='text'],
+        input[type='date'],
+        input[type='month'],
+        input[type='time'],
+        input[type='number']{
+            height: 35px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+        textarea{
+            border: none;
+            outline: none;
+            width: 210px;
+            border-radius: 10px;
+        }
+        input[type='text']:focus,
+        input[type='date']:focus,
+        input[type='month']:focus,
+        input[type='time']:focus,
+        input[type='number']:focus,
+        textarea:focus{
+            background-color: #a28f6f;
+            box-shadow: 0 0 10px darkred;
+        }
+        select{
+            height: 35px;
+            font-size: 20px;
+            width: 200px;
+            border-radius: 5px;
+        }
+        h2{
+            text-align: center;
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        button{
+            color: blue;
+            width: 250px;
+            padding:  20px;
+            margin-left: 550px;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<h2>Patient Information</h2>
+
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <lable>Name</lable>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <lable>Patient Id</lable>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <lable>date</lable>
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Father's Name</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <lable>Mother's Name</lable>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Present Address</label>
+                </td>
+                <td colspan="3">
+                    <textarea cols="20" rows="5"></textarea>
+                </td>
+                <td>
+                    <label>Permanent Address</label>
+                </td>
+                <td>
+                    <textarea cols="20" rows="5"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Landline number</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <label>Mobile Number</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            <tr>
+                <td>
+                    <label>Date of admission</label>
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label>Date of  discharged</label>
+                </td>
+                <td>
+                    <input type="datetime-local">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label>Gender</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>Disease</lable>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <lable> Status of diesease</lable>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+        <tr>
+            <td>Building Name</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Room No</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Room Type</td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+            <tr>
+        <td>Price</td>
+        <td>
+            <input type="text">
+        </td>
+    </tr>
+    </table>
+</form>
+
+<table>
+    <tr>
+        <td>
+            <button type="button" class="btn btn-primary btn-lg">Update</button>
+            <button type="button" class="btn btn-primary btn-lg">Close</button>
+        </td>
+    </tr>
+</table>
+<br><br><br>
+</body>
+</html>
